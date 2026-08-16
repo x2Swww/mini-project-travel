@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="bg-[#edf4f7] scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#081b16" />
+    <title>Contact Sonogno | Switzerland</title>
+    <meta name="description" content="Start planning your trip to Sonogno, Switzerland. Ask about local events, river walks, and village stays." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  </head>
+  <body class="bg-[#edf4f7] text-white antialiased overflow-x-hidden selection:bg-sky-200/70">
+    <header id="nav" class="fixed top-0 inset-x-0 z-50">
+      <nav id="navInner" class="flex items-center justify-center relative">
+        <ul class="hidden md:flex items-center gap-9 text-sm text-white/70">
+          <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+          <li><a href="index.html#about" class="hover:text-white transition">About</a></li>
+          <li><a href="index.html#events" class="hover:text-white transition">Events</a></li>
+          <li><a href="blog.html" class="hover:text-white transition">Blog</a></li>
+          <li><a href="maps.html" class="hover:text-white transition">Maps</a></li>
+          <li><a href="contact.html" class="text-white transition">Contact</a></li>
+        </ul>
+        <button id="burger" class="md:hidden absolute right-6 grid place-items-center h-9 w-9 rounded-full border border-white/15" aria-label="Open menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </button>
+      </nav>
+      <div id="mobileMenu" class="md:hidden hidden mx-6 mb-4 rounded-2xl glass-dark p-4">
+        <ul class="flex flex-col gap-3 text-sm text-white/80">
+          <li><a href="index.html" class="block py-1.5">Home</a></li>
+          <li><a href="index.html#about" class="block py-1.5">About</a></li>
+          <li><a href="index.html#events" class="block py-1.5">Events</a></li>
+          <li><a href="blog.html" class="block py-1.5">Blog</a></li>
+          <li><a href="maps.html" class="block py-1.5">Maps</a></li>
+          <li><a href="contact.html" class="block py-1.5">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="relative pt-36 pb-16 overflow-hidden">
+        <div class="absolute inset-0 stars opacity-25"></div>
+        <div class="absolute inset-0 page-glow"></div>
+        <div class="relative mx-auto max-w-4xl px-6 text-center" data-reveal>
+          <span class="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">Contact (ช่องทางติดต่อ)</span>
+          <h1 class="mt-3 text-4xl md:text-5xl font-bold tracking-tight text-white">Plan your stay in Sonogno</h1>
+          <p class="mt-5 text-white/65 leading-relaxed">
+            หากคุณกำลังวางแผนเดินทางไปยัง Sonogno หรืออยากรู้ข้อมูลเกี่ยวกับกิจกรรมในท้องถิ่น เราอยู่ที่นี่เพื่อช่วยคุณวางแผนการเยือนให้เหมาะสมที่สุด
+          </p>
+        </div>
+      </section>
+      <section class="relative pb-28">
+        <div class="mx-auto max-w-6xl px-6 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] items-start">
+          <div data-reveal class="space-y-6">
+            <div class="glass-dark rounded-[28px] p-6">
+              <h2 class="text-2xl font-semibold text-white">Travel notes</h2>
+              <ul class="mt-5 space-y-4 text-white/70">
+                <li class="flex gap-3"><span class="mt-1.5 h-2 w-2 rounded-full bg-sky-300"></span> Sonogno is nestled in the Verzasca Valley and is best enjoyed slowly on foot.</li>
+                <li class="flex gap-3"><span class="mt-1.5 h-2 w-2 rounded-full bg-sky-300"></span> The village is known for hiking routes, local markets, and mountain views.</li>
+                <li class="flex gap-3"><span class="mt-1.5 h-2 w-2 rounded-full bg-sky-300"></span> Spring and summer are ideal for outdoor wandering and village events.</li>
+              </ul>
+            </div>
+            <div class="glass-dark rounded-[28px] p-6">
+              <h2 class="text-2xl font-semibold text-white">Get in touch</h2>
+              <div class="mt-5 space-y-3 text-sm text-white/70">
+                <p>Email: hello@sonogno-swiss.com</p>
+                <p>Phone: +41 91 555 2048</p>
+                <p>Location: Verzasca Valley, Ticino, Switzerland</p>
+              </div>
+            </div>
+          </div>
+          <form id="contactForm" class="glass-dark rounded-[30px] p-6 md:p-8" data-reveal>
+            <div class="grid gap-4 md:grid-cols-2">
+              <input type="text" required placeholder="Your name" class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm placeholder-white/40 outline-none focus:border-emerald-300 focus:bg-white/10" />
+              <input type="email" required placeholder="Email address" class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm placeholder-white/40 outline-none focus:border-emerald-300 focus:bg-white/10" />
+            </div>
+            <input type="text" placeholder="Travel date / interest" class="mt-4 w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm placeholder-white/40 outline-none focus:border-emerald-300 focus:bg-white/10" />
+            <textarea rows="5" required placeholder="Tell us about your trip plans or which Sonogno experience you want to explore" class="mt-4 w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm placeholder-white/40 outline-none focus:border-emerald-300 focus:bg-white/10"></textarea>
+            <button type="submit" class="mt-6 inline-flex items-center gap-3 rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#1d2f3f] transition hover:bg-emerald-100">
+              Send inquiry
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="border-t border-white/5 py-10">
+      <div class="mx-auto max-w-6xl px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/50">
+        <div class="flex items-center gap-2.5">
+          <span class="font-semibold text-white">Sonogno</span>
+        </div>
+        <p>© จัดทำโดย นายวรินทร เทพเซ่งหลี027 และนายฮัสซัน รบเมือง033 สาขาเทคโนโลยีสารสนเทศ ปวช.1 ห้อง1</p>
+        <div class="flex gap-5">
+          <a href="index.html" class="hover:text-white transition">Home</a>
+          <a href="maps.html" class="hover:text-white transition">Maps</a>
+          <a href="blog.html" class="hover:text-white transition">Blog</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/nav.js"></script>
+    <script src="js/page.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>

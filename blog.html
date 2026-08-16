@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="bg-[#edf4f7] scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#081b16" />
+    <title>Stories from Sonogno | Blog</title>
+    <meta name="description" content="Read about Sonogno, the village of stone houses, mountain trails, local culture, and seasonal events in the Swiss Verzasca Valley." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  </head>
+  <body class="bg-[#edf4f7] text-white antialiased overflow-x-hidden selection:bg-sky-200/70">
+    <header id="nav" class="fixed top-0 inset-x-0 z-50">
+      <nav id="navInner" class="flex items-center justify-center relative">
+        <ul class="hidden md:flex items-center gap-9 text-sm text-white/70">
+          <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+          <li><a href="index.html#about" class="hover:text-white transition">About</a></li>
+          <li><a href="index.html#events" class="hover:text-white transition">Events</a></li>
+          <li><a href="blog.html" class="text-white transition">Blog</a></li>
+          <li><a href="maps.html" class="hover:text-white transition">Maps</a></li>
+          <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+        </ul>
+        <button id="burger" class="md:hidden absolute right-6 grid place-items-center h-9 w-9 rounded-full border border-white/15" aria-label="Open menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </button>
+      </nav>
+      <div id="mobileMenu" class="md:hidden hidden mx-6 mb-4 rounded-2xl glass-dark p-4">
+        <ul class="flex flex-col gap-3 text-sm text-white/80">
+          <li><a href="index.html" class="block py-1.5">Home</a></li>
+          <li><a href="index.html#about" class="block py-1.5">About</a></li>
+          <li><a href="index.html#events" class="block py-1.5">Events</a></li>
+          <li><a href="blog.html" class="block py-1.5">Blog</a></li>
+          <li><a href="maps.html" class="block py-1.5">Maps</a></li>
+          <li><a href="contact.html" class="block py-1.5">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="relative pt-36 pb-16 overflow-hidden">
+        <div class="absolute inset-0 stars opacity-30"></div>
+        <div class="absolute inset-0 page-glow"></div>
+        <div class="relative mx-auto max-w-6xl px-6" data-reveal>
+          <span class="text-sm font-semibold uppercase tracking-[0.22em] text-sky-700">Blog (บทความบรรยายสั้นๆ)</span>
+          <h1 class="mt-3 text-4xl md:text-5xl font-bold tracking-tight text-white">Stories from Sonogno</h1>
+          <p class="mt-5 max-w-2xl text-white/65 leading-relaxed">
+            เล่าเรื่องราวของหมู่บ้านเล็ก ๆ ในหุบเขา Verzasca ที่เต็มไปด้วยบ้านหิน อาหารท้องถิ่น เสียงเพลงริมถนน และทางเดินที่สวยงามราวนิยาย
+          </p>
+        </div>
+      </section>
+      <section class="relative pb-28">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="grid gap-6 md:grid-cols-3">
+            <article data-reveal class="overflow-hidden rounded-[28px] glass-dark transition hover:-translate-y-1 hover:bg-white/[0.08]">
+              <img src="public/img/The Village of Sonogno/Sonogno In Winter with Snow/Sonogno-In-Winter-with-Snow-TogetherinSwitzerland.com-2-768x1024.jpg" alt="Winter in Sonogno" class="h-52 w-full object-cover" />
+              <div class="p-6">
+                <span class="text-xs uppercase tracking-[0.18em] text-sky-700">Winter</span>
+                <h2 class="mt-3 text-2xl font-semibold leading-snug text-white">Winter calm and snow-covered silence</h2>
+                <p class="mt-3 text-sm leading-relaxed text-white/60">
+                  เมื่อหิมะปกคลุมหมู่บ้าน Sonogno ทุกอย่างดูเงียบและนิ่งลง ทำให้คุณสามารถสัมผัสความสงบแบบแท้จริง
+                  เหมือนกลืนอยู่ในความเงียบของหุบเขาและภูเขา
+                </p>
+              </div>
+            </article>
+            <article data-reveal class="overflow-hidden rounded-[28px] glass-dark transition hover:-translate-y-1 hover:bg-white/[0.08]">
+              <img src="public/img/The Village of Sonogno/Visit the Sonogno Museum/The-Village-of-Sonogno-TogetherinSwitzerland.com-4-768x1024.jpg" alt="Museum in Sonogno" class="h-52 w-full object-cover" />
+              <div class="p-6">
+                <span class="text-xs uppercase tracking-[0.18em] text-sky-700">Culture</span>
+                <h2 class="mt-3 text-2xl font-semibold leading-snug text-white">A village museum with a soul</h2>
+                <p class="mt-3 text-sm leading-relaxed text-white/60">
+                  Museo di Val Verzasca บอกเล่าเรื่องราวของชีวิตชนบทและประวัติศาสตร์การย้ายถิ่นของคนในหุบเขา
+                  ให้ความรู้สึกที่ลึกซึ้งและจริงใจมากกว่าความสวยงามเพียงอย่างเดียว
+                </p>
+              </div>
+            </article>
+            <article data-reveal class="overflow-hidden rounded-[28px] glass-dark transition hover:-translate-y-1 hover:bg-white/[0.08]">
+              <img src="public/img/The Village of Sonogno/Discover a local event/IMG_20230513_125716-768x1024.jpg" alt="Village festival in Sonogno" class="h-52 w-full object-cover" />
+              <div class="p-6">
+                <span class="text-xs uppercase tracking-[0.18em] text-sky-700">Festivals</span>
+                <h2 class="mt-3 text-2xl font-semibold leading-snug text-white">Local festivals that bring the square to life</h2>
+                <p class="mt-3 text-sm leading-relaxed text-white/60">
+                  จากเทศกาลดนตรีพื้นเมือง ไปจนถึงงานพิซซ่าชุมชน กิจกรรมเหล่านี้ทำให้ชุมชน Sonogno กลายเป็นสถานที่ที่อบอุ่นและมีชีวิตชีวา
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="border-t border-white/5 py-10">
+      <div class="mx-auto max-w-6xl px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/50">
+        <div class="flex items-center gap-2.5">
+          <span class="font-semibold text-white">Sonogno</span>
+        </div>
+        <p>© จัดทำโดย นายวรินทร เทพเซ่งหลี027 และนายฮัสซัน รบเมือง033 สาขาเทคโนโลยีสารสนเทศ ปวช.1 ห้อง1</p>
+        <div class="flex gap-5">
+          <a href="index.html" class="hover:text-white transition">Home</a>
+          <a href="maps.html" class="hover:text-white transition">Maps</a>
+          <a href="contact.html" class="hover:text-white transition">Contact</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/nav.js"></script>
+    <script src="js/page.js"></script>
+  </body>
+</html>

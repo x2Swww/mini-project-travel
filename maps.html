@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="bg-[#edf4f7] scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#081b16" />
+    <title>Plan a Visit to Sonogno | Maps</title>
+    <meta name="description" content="Find your way to Sonogno in Switzerland and explore the Verzasca Valley with scenic routes, village highlights, and travel notes." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  </head>
+  <body class="bg-[#edf4f7] text-white antialiased overflow-x-hidden selection:bg-sky-200/70">
+    <header id="nav" class="fixed top-0 inset-x-0 z-50">
+      <nav id="navInner" class="flex items-center justify-center relative">
+        <ul class="hidden md:flex items-center gap-9 text-sm text-white/70">
+          <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+          <li><a href="index.html#about" class="hover:text-white transition">About</a></li>
+          <li><a href="index.html#events" class="hover:text-white transition">Events</a></li>
+          <li><a href="blog.html" class="hover:text-white transition">Blog</a></li>
+          <li><a href="maps.html" class="text-white transition">Maps</a></li>
+          <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+        </ul>
+        <button id="burger" class="md:hidden absolute right-6 grid place-items-center h-9 w-9 rounded-full border border-white/15" aria-label="Open menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </button>
+      </nav>
+      <div id="mobileMenu" class="md:hidden hidden mx-6 mb-4 rounded-2xl glass-dark p-4">
+        <ul class="flex flex-col gap-3 text-sm text-white/80">
+          <li><a href="index.html" class="block py-1.5">Home</a></li>
+          <li><a href="index.html#about" class="block py-1.5">About</a></li>
+          <li><a href="index.html#events" class="block py-1.5">Events</a></li>
+          <li><a href="blog.html" class="block py-1.5">Blog</a></li>
+          <li><a href="maps.html" class="block py-1.5">Maps</a></li>
+          <li><a href="contact.html" class="block py-1.5">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="relative pt-36 pb-16 overflow-hidden">
+        <div class="absolute inset-0 stars opacity-25"></div>
+        <div class="absolute inset-0 page-glow"></div>
+        <div class="relative mx-auto max-w-6xl px-6" data-reveal>
+          <span class="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">Maps (แผนที่และการเดินทาง)</span>
+          <h1 class="mt-3 text-4xl md:text-5xl font-bold tracking-tight text-white">Plan a scenic visit to Sonogno</h1>
+          <p class="mt-5 max-w-2xl text-white/65 leading-relaxed">
+            หมู่บ้าน Sonogno ตั้งอยู่ในหุบเขา Verzasca ทางตอนใต้ของสวิตเซอร์แลนด์ เป็นจุดหมายที่เหมาะสำหรับการเดินป่า ดูวิวภูเขา และสัมผัสวัฒนธรรมท้องถิ่นแบบเงียบสงบ
+          </p>
+        </div>
+      </section>
+      <section class="relative pb-28">
+        <div class="mx-auto max-w-6xl px-6 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] items-center">
+          <div data-reveal class="space-y-6">
+            <div class="grid grid-cols-3 gap-4">
+              <div class="glass-dark rounded-2xl p-4 text-center">
+                <p class="text-3xl font-bold text-white">1</p>
+                <p class="mt-2 text-xs uppercase tracking-[0.2em] text-white/50">Valley</p>
+              </div>
+              <div class="glass-dark rounded-2xl p-4 text-center">
+                <p class="text-3xl font-bold text-white">3</p>
+                <p class="mt-2 text-xs uppercase tracking-[0.2em] text-white/50">Routes</p>
+              </div>
+              <div class="glass-dark rounded-2xl p-4 text-center">
+                <p class="text-3xl font-bold text-white">∞</p>
+                <p class="mt-2 text-xs uppercase tracking-[0.2em] text-white/50">Views</p>
+              </div>
+            </div>
+            <div class="glass-dark rounded-[28px] p-6">
+              <h2 class="text-2xl font-semibold text-white">Why travelers love it</h2>
+              <ul class="mt-5 space-y-4 text-white/70">
+                <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-sky-300"></span> บ้านหินและลานกว้างที่มีบรรยากาศเงียบสงบ</li>
+                <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-sky-300"></span> เส้นทางเดินป่าริมแม่น้ำและถนนเชื่อมผืนทุ่ง</li>
+                <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-sky-300"></span> วัฒนธรรมท้องถิ่นและเทศกาลที่พาคุณได้สัมผัสชุมชน</li>
+              </ul>
+            </div>
+          </div>
+          <div data-reveal class="glass-dark rounded-[30px] p-4">
+            <iframe
+              title="Sonogno map"
+              class="w-full h-[420px] md:h-[560px] rounded-[22px] border-0 grayscale-[0.15] contrast-110"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=8.775%2C46.250%2C8.970%2C46.340&amp;layer=mapnik">
+            </iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="border-t border-white/5 py-10">
+      <div class="mx-auto max-w-6xl px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/50">
+        <div class="flex items-center gap-2.5">
+          <span class="font-semibold text-white">Sonogno</span>
+        </div>
+        <p>© จัดทำโดย นายวรินทร เทพเซ่งหลี027 และนายฮัสซัน รบเมือง033 สาขาเทคโนโลยีสารสนเทศ ปวช.1 ห้อง1</p>
+        <div class="flex gap-5">
+          <a href="index.html" class="hover:text-white transition">Home</a>
+          <a href="blog.html" class="hover:text-white transition">Blog</a>
+          <a href="contact.html" class="hover:text-white transition">Contact</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/nav.js"></script>
+    <script src="js/page.js"></script>
+  </body>
+</html>

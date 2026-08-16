@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="bg-[#edf4f7] scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#081b16" />
+    <title>The Village of Sonogno | Switzerland</title>
+    <meta name="description" content="Discover Sonogno, a hidden Swiss village in the Verzasca Valley, known for stone houses, mountain views, local events, and peaceful mountain life." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  </head>
+  <body class="bg-[#edf4f7] text-white antialiased overflow-x-hidden selection:bg-sky-200/70">
+    <header id="nav" class="fixed top-0 inset-x-0 z-50">
+      <nav id="navInner" class="flex items-center justify-center relative">
+        <ul class="hidden md:flex items-center gap-9 text-sm text-white/70">
+          <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+          <li><a href="#about" class="hover:text-white transition">About</a></li>
+          <li><a href="#events" class="hover:text-white transition">Events</a></li>
+          <li><a href="blog.html" class="hover:text-white transition">Blog</a></li>
+          <li><a href="maps.html" class="hover:text-white transition">Maps</a></li>
+          <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+        </ul>
+        <button id="burger" class="md:hidden absolute right-6 grid place-items-center h-9 w-9 rounded-full border border-white/15" aria-label="Open menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </button>
+      </nav>
+      <div id="mobileMenu" class="md:hidden hidden mx-6 mb-4 rounded-2xl glass-dark p-4">
+        <ul class="flex flex-col gap-3 text-sm text-white/80">
+          <li><a href="index.html" class="block py-1.5">Home</a></li>
+          <li><a href="#about" class="block py-1.5">About</a></li>
+          <li><a href="#events" class="block py-1.5">Events</a></li>
+          <li><a href="blog.html" class="block py-1.5">Blog</a></li>
+          <li><a href="maps.html" class="block py-1.5">Maps</a></li>
+          <li><a href="contact.html" class="block py-1.5">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section id="home" class="relative min-h-screen pt-32 pb-20 overflow-hidden">
+        <div class="absolute inset-0 stars opacity-70"></div>
+        <div class="absolute inset-0 hero-glow"></div>
+        <div class="relative mx-auto max-w-6xl px-6 pt-8 lg:pt-12">
+          <div class="grid items-center gap-10 lg:grid-cols-[1.08fr_0.92fr]">
+            <div>
+              <div data-hero class="inline-flex items-center gap-2 rounded-full glass-dark px-3 py-1.5 text-[11px] font-medium uppercase tracking-[0.2em] text-slate-700">
+                <span class="inline-block h-2 w-2 rounded-full bg-sky-300"></span>
+                miniproject • แหล่งท่องเที่ยวทางธรรมชาติ
+              </div>
+              <h1 data-hero class="mt-7 text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[0.98] tracking-tight text-white">
+                The Village of<br />Sonogno
+              </h1>
+              <p data-hero class="mt-6 max-w-xl text-base leading-relaxed text-white/70">
+                หมู่บ้าน Sonogno ตั้งอยู่ในหุบเขา Verzasca ของแคว้น Ticino ในประเทศสวิตเซอร์แลนด์
+                เป็นหมู่บ้านเล็ก ๆ ที่เต็มไปด้วยบ้านหินโบราณ ทิวทัศน์แม่น้ำกระจ่างใส และบรรยากาศเงียบสงบ
+                เหมาะสำหรับการพักผ่อนและเดินป่าแบบช้าลง หากคุณกำลังมองหาสถานที่ที่ให้ความรู้สึกอ่อนโยนและเรียบง่าย
+                Sonogno คือจุดหมายที่ควรค่าแก่การเยือน
+              </p>
+              <div data-hero class="mt-8 flex flex-wrap items-center gap-4">
+                <a href="#about" class="inline-flex items-center gap-3 rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#1d2f3f] transition hover:bg-emerald-100">
+                  view the village
+                  <span class="grid h-6 w-6 place-items-center rounded-full bg-sky-500 text-white">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                </a>
+                <a href="#video" class="inline-flex items-center gap-2 text-sm font-medium text-white/75 hover:text-white transition">
+                  <span class="grid h-8 w-8 place-items-center rounded-full border border-white/20 bg-white/5">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  </span>
+                  view more
+                </a>
+              </div>
+              <div data-hero class="mt-10 grid max-w-lg grid-cols-3 gap-4">
+                <div class="glass rounded-2xl p-4 text-left">
+                  <p class="text-[11px] uppercase tracking-[0.18em] text-white/50">ชุมชนหินโบราณยุคกลาง</p>
+                  <p class="mt-3 text-sm font-semibold text-white">กำเนิดขึ้นช่วงศตวรรษที่ 12–13</p>
+                </div>
+                <div class="glass rounded-2xl p-4 text-left">
+                  <p class="text-[11px] uppercase tracking-[0.18em] text-white/50">แหล่งภูมิปัญญาดั้งเดิม</p>
+                  <p class="mt-3 text-sm font-semibold text-white">เป็นหมู่บ้านท่องเที่ยวเชิงธรรมชาติ</p>
+                </div>
+                <div class="glass rounded-2xl p-4 text-left">
+                  <p class="text-[11px] uppercase tracking-[0.18em] text-white/50">ธรรมชาติและภูมิประเทศ</p>
+                  <p class="mt-3 text-sm font-semibold text-white">ตั้งอยู่ในเขตภูเขาธรรมชาติสมบูรณ์</p>
+                </div>
+              </div>
+            </div>
+            <div id="video" class="relative" data-hero>
+              <div class="glass-dark overflow-hidden rounded-[28px] p-3 shadow-[0_30px_80px_rgba(0,0,0,0.35)]">
+                <div class="overflow-hidden rounded-[22px] border border-white/10 bg-black/30">
+                  <video class="h-[540px] w-full object-cover" autoplay muted loop playsinline poster="public/img/The Village of Sonogno/The-Village-of-Sonogno-TogetherinSwitzerland.com-6-1024x768.jpg">
+                    <source src="public/video/village.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+              <div class="absolute -bottom-5 left-6 right-6 glass rounded-2xl p-4 text-sm text-[#1d2f3f] shadow-xl">
+                <div class="flex items-center justify-between gap-4">
+                  <div>
+                    <p class="text-[10px] uppercase tracking-[0.2em] text-[#1d2f3f]/60">Why visit</p>
+                    <p class="mt-2 font-semibold">Stone houses, river light, mountain calm</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="relative py-28 border-t border-white/5">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
+            <div data-reveal>
+              <span class="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">About Sonogno (ข้อมูลของสถานที่)</span>
+              <h2 class="mt-4 text-4xl md:text-5xl font-bold tracking-tight text-white">A hidden gem in the heart of Switzerland</h2>
+              <p class="mt-5 text-base leading-relaxed text-white/65">
+                Sonogno เป็นชุมชนบ้านหินแกรนิตโบราณยุคกลางในหุบเขาเวร์ซาสกา ประเทศสวิตเซอร์แลนด์ ที่มีประวัติศาสตร์ยาวนานตั้งแต่ศตวรรษที่ 12 ผ่านวิถีชีวิตเกษตรกรรมพึ่งพาตนเองและเรื่องราวสะเทือนใจของเด็กกวาดปล่องไฟในศตวรรษที่ 19 จนพัฒนามาเป็นสถานที่ท่องเที่ยวเชิงอนุรักษ์ที่ยังคงรักษาสถาปัตยกรรมดั้งเดิมและภูมิปัญญาหัตถกรรมท้องถิ่นไว้อย่างสมบูรณ์ในปัจจุบัน
+              </p>
+              <div class="mt-8 space-y-5">
+                <div class="flex gap-4 rounded-2xl glass-dark p-4">
+                  <div class="grid h-11 w-11 place-items-center rounded-xl bg-sky-200/50 text-sky-700">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 19V9l7-5 7 5v10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M9 19v-6h6v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-white">Traditional stone homes</h3>
+                    <p class="mt-1 text-sm text-white/60">บ้านหินอันเก่าแก่สร้างความรู้สึกอบอุ่นและน่าหลงใหลเหนือภูเขา</p>
+                  </div>
+                </div>
+                <div class="flex gap-4 rounded-2xl glass-dark p-4">
+                  <div class="grid h-11 w-11 place-items-center rounded-xl bg-sky-200/50 text-sky-700">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 16c2-2 4-3 6-3s4 1 6 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M4 12c2-2 4-3 6-3s4 1 6 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M4 8c2-2 4-3 6-3s4 1 6 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-white">Crystal-clear river and valley walks</h3>
+                    <p class="mt-1 text-sm text-white/60">ลำธารและเส้นทางเดินป่าแถบ Verzasca ให้รอยยิ้มและแรงบันดาลใจทุกก้าว</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid gap-4 sm:grid-cols-2" data-reveal>
+              <img src="public/img/The Village of Sonogno/Bosco-Gurin-e1706883603951-1024x653.jpeg" alt="Sonogno valley landscape" class="h-64 w-full rounded-[26px] object-cover shadow-2xl shadow-[#0a1b18]/30 sm:col-span-2" />
+              <img src="public/img/The Village of Sonogno/Intragna-Ticino-Villages-Zoe-Together-In-Switzerland-1024x768.jpg" alt="Village houses and valley" class="h-56 w-full rounded-[26px] object-cover" />
+              <img src="public/img/The Village of Sonogno/The-Village-of-Sonogno-TogetherinSwitzerland.com-6-1024x768.jpg" alt="Scenic Sonogno village" class="h-56 w-full rounded-[26px] object-cover" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="events" class="relative py-28 border-t border-white/5">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="flex flex-wrap items-end justify-between gap-4" data-reveal>
+            <div>
+              <span class="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">Events (กิจกรรมและจุดเด่น)</span>
+              <h2 class="mt-3 text-4xl md:text-5xl font-bold tracking-tight text-white">Moments worth discovering</h2>
+            </div>
+            <a href="blog.html" class="text-sm text-white/60 hover:text-white transition">See more stories →</a>
+          </div>
+          <div class="mt-12 grid gap-6 md:grid-cols-3">
+            <article data-reveal class="overflow-hidden rounded-[28px] glass-dark transition hover:-translate-y-1 hover:bg-white/[0.08]">
+              <img src="public/img/The Village of Sonogno/Discover a local event/IMG_20230513_125706-768x1024.jpg" alt="Local market in Sonogno" class="h-52 w-full object-cover" />
+              <div class="p-6">
+                <p class="text-xs uppercase tracking-[0.18em] text-sky-700">May</p>
+                <h3 class="mt-3 text-xl font-semibold text-white">Village market &amp; craft stalls</h3>
+                <p class="mt-3 text-sm leading-relaxed text-white/60">
+                  ตลาดสดในจัตุรัสหมู่บ้านมีสินค้าท้องถิ่นและงานหัตถกรรมที่ทำให้คุณได้สัมผัสวัฒนธรรมท้องถิ่นอย่างแท้จริง
+                </p>
+              </div>
+            </article>
+            <article data-reveal class="overflow-hidden rounded-[28px] glass-dark transition hover:-translate-y-1 hover:bg-white/[0.08]">
+              <img src="public/img/The Village of Sonogno/Discover a local event/IMG_20230611_102504-768x1024.jpg" alt="Spring concert in Sonogno" class="h-52 w-full object-cover" />
+              <div class="p-6">
+                <p class="text-xs uppercase tracking-[0.18em] text-sky-700">Late May</p>
+                <h3 class="mt-3 text-xl font-semibold text-white">Spring concert by the choir</h3>
+                <p class="mt-3 text-sm leading-relaxed text-white/60">
+                  ดนตรีร่วมสมัยและเสียงร้องจาก Verzaschese Choir ทำให้บรรยากาศยามเย็นของ Sonogno น่าจดจำยิ่งขึ้น
+                </p>
+              </div>
+            </article>
+            <article data-reveal class="overflow-hidden rounded-[28px] glass-dark transition hover:-translate-y-1 hover:bg-white/[0.08]">
+              <img src="public/img/The Village of Sonogno/Discover a local event/IMG_20230513_125716-768x1024.jpg" alt="Pizza party in Sonogno" class="h-52 w-full object-cover" />
+              <div class="p-6">
+                <p class="text-xs uppercase tracking-[0.18em] text-sky-700">July 25</p>
+                <h3 class="mt-3 text-xl font-semibold text-white">Pizza evening in the village square</h3>
+                <p class="mt-3 text-sm leading-relaxed text-white/60">
+                  งานปาร์ตี้กลางแจ้งที่มีพิซซ่าจากเตาเผาโบราณ เสียงเพลงสด และบรรยากาศชุมชนที่อบอุ่นอ่อนหวาน
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="relative py-28 border-t border-white/5">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="flex flex-wrap items-end justify-between gap-4" data-reveal>
+            <div>
+              <span class="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">Journal (เรื่องราวของสถานที่)</span>
+              <h2 class="mt-3 text-4xl md:text-5xl font-bold tracking-tight text-white">Stories from the valley</h2>
+            </div>
+            <a href="blog.html" class="text-sm text-white/60 hover:text-white transition">Visit blog →</a>
+          </div>
+          <div class="mt-12 grid gap-6 md:grid-cols-3">
+            <article data-reveal class="overflow-hidden rounded-[28px] glass-dark">
+              <img src="public/img/The Village of Sonogno/Sonogno In Winter with Snow/Sonogno-In-Winter-with-Snow-TogetherinSwitzerland.com-1-768x1024.jpg" alt="Sonogno in winter" class="h-52 w-full object-cover" />
+              <div class="p-6">
+                <p class="text-xs uppercase tracking-[0.18em] text-sky-700">Winter</p>
+                <h3 class="mt-3 text-xl font-semibold text-white">Winter calm in the mountains</h3>
+                <p class="mt-3 text-sm leading-relaxed text-white/60">การพักผ่อนในฤดูหนาวพร้อมภาพหิมะและความเงียบที่วางใจได้</p>
+              </div>
+            </article>
+            <article data-reveal class="overflow-hidden rounded-[28px] glass-dark">
+              <img src="public/img/The Village of Sonogno/Visit the Sonogno Museum/The-Village-of-Sonogno-TogetherinSwitzerland.com-4-768x1024.jpg" alt="Visit the museum" class="h-52 w-full object-cover" />
+              <div class="p-6">
+                <p class="text-xs uppercase tracking-[0.18em] text-sky-700">Culture</p>
+                <h3 class="mt-3 text-xl font-semibold text-white">The museum of the valley</h3>
+                <p class="mt-3 text-sm leading-relaxed text-white/60">โรงแรมความทรงจำแห่ง Verzasca ให้เรื่องราวของชุมชน และชีวิตชนบท</p>
+              </div>
+            </article>
+            <article data-reveal class="overflow-hidden rounded-[28px] glass-dark">
+              <img src="public/img/The Village of Sonogno/Visit the Sonogno Museum/The-Village-of-Sonogno-TogetherinSwitzerland.com-5-768x1024.jpg" alt="Hiking around Sonogno" class="h-52 w-full object-cover" />
+              <div class="p-6">
+                <p class="text-xs uppercase tracking-[0.18em] text-sky-700">Hikes</p>
+                <h3 class="mt-3 text-xl font-semibold text-white">Trails above the river</h3>
+                <p class="mt-3 text-sm leading-relaxed text-white/60">เส้นทางเดินป่าสำหรับผู้ที่ชื่นชอบวิวและการเพลิดเพลินไปกับธรรมชาติ</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="border-t border-white/5 py-10">
+      <div class="mx-auto max-w-6xl px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/50">
+        <div class="flex items-center gap-2.5">
+          <span class="font-semibold text-white">Sonogno</span>
+        </div>
+        <p>© จัดทำโดย นายวรินทร เทพเซ่งหลี027 และนายฮัสซัน รบเมือง033 สาขาเทคโนโลยีสารสนเทศ ปวช.1 ห้อง1</p>
+        <div class="flex gap-5">
+          <a href="maps.html" class="hover:text-white transition">Maps</a>
+          <a href="contact.html" class="hover:text-white transition">Contact</a>
+          <a href="blog.html" class="hover:text-white transition">Blog</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/nav.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>
